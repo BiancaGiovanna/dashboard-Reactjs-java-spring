@@ -1,5 +1,15 @@
-function App() {
-  return <h1 className='text-primary'>Tá tudo funcionando?</h1>;
-}
+import DataTable from "./components/DataTable";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <NavBar />
+      <div className='container'>
+        <DataTable />
+      </div>
+      <Footer />
+    </>
+  );
+}
