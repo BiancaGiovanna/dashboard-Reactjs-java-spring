@@ -18,7 +18,6 @@ public class SellerController {
 	@Autowired
 	private SellerService service;
 	
-	
 	@GetMapping
 	public ResponseEntity<List<SellerDTO>> findAll(){
 		List<SellerDTO> list = service.findAll();
