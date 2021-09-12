@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ImgLogo from "./../../assets/img/dashboard.png";
 
 export default function NavBar() {
@@ -5,7 +6,9 @@ export default function NavBar() {
     <div className='d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm'>
       <div className='container'>
         <nav className='my-2 my-md-0 mr-md-3'>
-          <img src={ImgLogo} alt='DevSuperior' width='250' height='100' />
+          <Link to='/'>
+            <img src={ImgLogo} alt='DevSuperior' width='250' height='100' />
+          </Link>
         </nav>
       </div>
     </div>
